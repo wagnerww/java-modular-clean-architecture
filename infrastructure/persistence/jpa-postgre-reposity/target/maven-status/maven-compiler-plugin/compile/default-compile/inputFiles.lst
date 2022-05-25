@@ -1,0 +1,3 @@
+/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/infrastructure/persistence/jpa-postgre-reposity/src/main/java/com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductModelRepository.java
+/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/infrastructure/persistence/jpa-postgre-reposity/src/main/java/com/wagnerww/cleanarch/repository/jpa/postgre/ProductModel.java
+/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/infrastructure/persistence/jpa-postgre-reposity/src/main/java/com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductRepositoryImpl.java
