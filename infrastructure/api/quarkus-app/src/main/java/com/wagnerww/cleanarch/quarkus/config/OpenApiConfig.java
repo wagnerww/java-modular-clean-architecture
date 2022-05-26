@@ -10,10 +10,10 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 @OpenAPIDefinition(
         tags = {
-                @Tag(name = "/v1/customers", description = "API's para clientes")
+                @Tag(name = "/v1/products", description = "API's para produtos")
         },
         info = @Info(
-                title = "Sistema de exemplo de clientes",
+                title = "Sistema de exemplo de produtos",
                 version = "1.0.0",
                 contact = @Contact(
                         name = "Entre em contato",
