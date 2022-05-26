@@ -1,4 +1,5 @@
 META-INF/panache-archive.marker
 com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductModelRepository.class
+com/wagnerww/cleanarch/repository/jpa/postgre/ProductJpaEnity.class
 com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductRepositoryImpl.class
-com/wagnerww/cleanarch/repository/jpa/postgre/ProductModel.class
+com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductJpaMapper.class

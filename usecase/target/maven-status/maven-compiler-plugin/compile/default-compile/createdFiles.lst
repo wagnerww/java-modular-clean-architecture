@@ -1,1 +1,7 @@
-com/wagnerww/cleanarch/quarkus/product/create/UseCaseProductCreate.class
+com/wagnerww/cleanarch/quarkus/product/deactivate/DeactivateProductUseCase.class
+com/wagnerww/cleanarch/quarkus/product/update/UpdateProductInput.class
+com/wagnerww/cleanarch/quarkus/product/update/UpdateProductUseCase.class
+com/wagnerww/cleanarch/quarkus/product/activate/ActivateProductUseCase.class
+com/wagnerww/cleanarch/quarkus/product/create/CreateProductUseCase.class
+com/wagnerww/cleanarch/quarkus/product/create/CreateProdutInput.class
+com/wagnerww/cleanarch/quarkus/product/create/CreateProdutOutput.class
