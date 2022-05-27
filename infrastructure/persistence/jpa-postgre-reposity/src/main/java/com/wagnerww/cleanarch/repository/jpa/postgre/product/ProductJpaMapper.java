@@ -1,7 +1,6 @@
 package com.wagnerww.cleanarch.repository.jpa.postgre.product;
 
 import com.wagnerww.cleanarch.quarkus.domain.product.Product;
-import com.wagnerww.cleanarch.repository.jpa.postgre.ProductJpaEnity;
 
 public class ProductJpaMapper {
 

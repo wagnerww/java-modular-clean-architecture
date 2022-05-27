@@ -1,27 +1,33 @@
 package com.wagnerww.cleanarch.quarkus;
 
-import java.math.BigDecimal;
-
+import javax.enterprise.context.Dependent;
 import javax.inject.Inject;
 
-import com.wagnerww.cleanarch.quarkus.product.create.CreateProductUseCase;
-import com.wagnerww.cleanarch.quarkus.product.create.CreateProdutInput;
-
+import ccom.wagnerww.cleanarch.quarkus.eventstore.consumer.EventStoreConsumer;
+import io.quarkus.runtime.Quarkus;
+import io.quarkus.runtime.QuarkusApplication;
+import io.quarkus.runtime.annotations.QuarkusMain;
+import io.quarkus.scheduler.Scheduled;
+import io.quarkus.scheduler.Scheduled.ConcurrentExecution;
 import picocli.CommandLine.Command;
 
-@Command
-public class GreetingCommand implements Runnable {
+@Dependent
+@QuarkusMain
+public class GreetingCommand implements QuarkusApplication {
 
     @Inject
-    private CreateProductUseCase createProductUseCase;
-   
+    private  EventStoreConsumer eventStoreConsumer;
+
     @Override
-    public void run() {
-        System.out.printf("go go commando persistence!");
-        CreateProdutInput anProduct = new CreateProdutInput();
-        anProduct.setName("Produto CLI");
-        anProduct.setPrice(BigDecimal.valueOf(25));
-        createProductUseCase.execute(anProduct);
+    public int run(String... args) throws Exception {      
+        Quarkus.waitForExit();
+
+        return 0;
+    }
+
+    @Scheduled(every = "1s", concurrentExecution = ConcurrentExecution.SKIP )
+    public void test(){
+        eventStoreConsumer.persistEvent();
     }
 
 }

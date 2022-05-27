@@ -1,4 +1,4 @@
-package com.wagnerww.cleanarch.repository.jpa.postgre;
+package com.wagnerww.cleanarch.repository.jpa.postgre.product;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

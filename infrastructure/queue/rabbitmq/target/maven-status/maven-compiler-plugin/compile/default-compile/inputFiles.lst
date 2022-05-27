@@ -1,0 +1,2 @@
+/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/infrastructure/queue/rabbitmq/src/main/java/ccom/wagnerww/cleanarch/quarkus/eventstore/producer/EventStoreProducerEventRepositoryImpl.java
+/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/infrastructure/queue/rabbitmq/src/main/java/ccom/wagnerww/cleanarch/quarkus/eventstore/consumer/EventStoreConsumer.java

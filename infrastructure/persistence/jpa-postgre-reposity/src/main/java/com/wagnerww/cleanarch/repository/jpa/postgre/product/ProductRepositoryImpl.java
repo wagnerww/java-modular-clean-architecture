@@ -8,8 +8,6 @@ import javax.transaction.Transactional;
 
 import com.wagnerww.cleanarch.quarkus.domain.product.Product;
 import com.wagnerww.cleanarch.quarkus.domain.product.ProductRepository;
-import com.wagnerww.cleanarch.repository.jpa.postgre.ProductJpaEnity;
-
 
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 

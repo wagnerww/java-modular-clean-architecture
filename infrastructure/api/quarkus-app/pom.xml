@@ -34,11 +34,6 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-    <dependency>
-      <groupId>com.wagnerww.cleanarch.quarkus</groupId>
-      <artifactId>domain</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
       <dependency>
       <groupId>com.wagnerww.cleanarch.quarkus</groupId>
       <artifactId>usecase</artifactId>
@@ -47,6 +42,11 @@
     <dependency>
       <groupId>com.wagnerww.cleanarch.quarkus</groupId>
       <artifactId>jpa-postgre-reposity</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+      <dependency>
+      <groupId>com.wagnerww.cleanarch.quarkus</groupId>
+      <artifactId>rabbitmq</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <dependency>

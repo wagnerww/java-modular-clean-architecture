@@ -1,2 +1,6 @@
+com/wagnerww/cleanarch/quarkus/domain/eventstore/events/EventStoreInputEvent.class
+com/wagnerww/cleanarch/quarkus/domain/eventstore/EventStore.class
+com/wagnerww/cleanarch/quarkus/domain/eventstore/EventStoreRepository.class
 com/wagnerww/cleanarch/quarkus/domain/product/ProductRepository.class
 com/wagnerww/cleanarch/quarkus/domain/product/Product.class
+com/wagnerww/cleanarch/quarkus/domain/eventstore/events/EventStoreProducerEventRepository.class
