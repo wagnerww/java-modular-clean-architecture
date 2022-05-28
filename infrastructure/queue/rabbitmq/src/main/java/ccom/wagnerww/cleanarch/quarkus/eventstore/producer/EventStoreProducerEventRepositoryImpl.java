@@ -65,8 +65,11 @@ public class EventStoreProducerEventRepositoryImpl implements
             channel.exchangeDeclare(EXCHANGE_NAME, BuiltinExchangeType.DIRECT, false, false, null);
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
             channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, "");
-            channel.basicPublish(EXCHANGE_NAME, QUEUE_NAME, null, eventStoreInputJson.getBytes(StandardCharsets.UTF_8));
+            channel.basicPublish(EXCHANGE_NAME, "", null, eventStoreInputJson.getBytes(StandardCharsets.UTF_8));
             System.out.println(" [x] Sent '" + eventStoreInputJson + "'");
+        } catch (Exception e) {
+          System.out.println("Error_rabbit"+e);
+          createEventStoreUseCase.execute(eventStoreInput);
         }
       } catch (Exception e) {
         System.out.println("Error_rabbit"+e);

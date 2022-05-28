@@ -1,10 +1,11 @@
 package com.wagnerww.cleanarch.repository.jpa.postgre.aggregates.product;
 
+public abstract interface ProductAggregateModelRepository  {
 
+  public void create(ProductAggregateJpaEntity anProduct);
 
-import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
+  public ProductAggregateJpaEntity findOneById(String anId);
 
-public abstract interface ProductAggregateModelRepository extends 
-PanacheRepositoryBase<ProductAggregateJpaEntity, String> {
+  public void update(ProductAggregateJpaEntity anProduct);
 
 }

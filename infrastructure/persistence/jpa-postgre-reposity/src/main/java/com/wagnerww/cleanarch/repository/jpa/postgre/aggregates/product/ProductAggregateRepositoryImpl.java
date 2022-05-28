@@ -6,16 +6,12 @@ import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import com.wagnerww.cleanarch.quarkus.domain.product.Product;
-import com.wagnerww.cleanarch.quarkus.domain.product.ProductRepository;
-import com.wagnerww.cleanarch.repository.jpa.postgre.product.ProductJpaEnity;
-
 import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
 
 @Named
 @ApplicationScoped
-public class ProductAggregateRepositoryImpl implements 
-  PanacheRepositoryBase<ProductAggregateJpaEntity, String> {
+public class ProductAggregateRepositoryImpl implements
+PanacheRepositoryBase<ProductAggregateJpaEntity, String>, ProductAggregateModelRepository {
 
   @Inject
   EntityManager em;
@@ -25,18 +21,21 @@ public class ProductAggregateRepositoryImpl implements
 
 
   @Transactional
+  @Override
   public void create(ProductAggregateJpaEntity anProduct) {
     em.persist(anProduct);        
   }
 
   @Transactional
-  public ProductAggregateJpaEntity findOneById(String id) {
-    ProductAggregateJpaEntity entity =  em.find(ProductAggregateJpaEntity.class, id);
+  @Override
+  public ProductAggregateJpaEntity findOneById(String anId) {
+    ProductAggregateJpaEntity entity =  em.find(ProductAggregateJpaEntity.class, anId);
     return entity;  
   }
 
   
   @Transactional
+  @Override
   public void update(ProductAggregateJpaEntity anProduct) {
     em.merge(anProduct);    
   }

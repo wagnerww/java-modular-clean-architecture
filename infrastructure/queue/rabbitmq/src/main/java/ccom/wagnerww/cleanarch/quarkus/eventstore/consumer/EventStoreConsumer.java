@@ -1,7 +1,5 @@
 package ccom.wagnerww.cleanarch.quarkus.eventstore.consumer;
 
-import java.util.concurrent.TimeoutException;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -17,6 +15,8 @@ import com.rabbitmq.client.DeliverCallback;
 import com.wagnerww.cleanarch.quarkus.eventstore.create.CreateEventStoreInput;
 import com.wagnerww.cleanarch.quarkus.eventstore.create.CreateEventStoreUseCase;
 
+import ccom.wagnerww.cleanarch.quarkus.projections.product.ProductProjectionSimpleSearch;
+
 @Named
 @ApplicationScoped
 public class EventStoreConsumer {
@@ -25,12 +25,15 @@ public class EventStoreConsumer {
   private final static String QUEUE_NAME = "Event_store";
   
   private final CreateEventStoreUseCase createEventStoreUseCase;
+  private final ProductProjectionSimpleSearch productProjectionSimpleSearch;
 
   @Inject
   public EventStoreConsumer(
-    final CreateEventStoreUseCase createEventStoreUseCase
+    final CreateEventStoreUseCase createEventStoreUseCase,
+    final ProductProjectionSimpleSearch productProjectionSimpleSearch
   ) {
     this.createEventStoreUseCase = createEventStoreUseCase;
+    this.productProjectionSimpleSearch = productProjectionSimpleSearch;
   }
 
   
@@ -63,6 +66,8 @@ public class EventStoreConsumer {
             CreateEventStoreInput createEventStoreInput = mapper.readValue(message, CreateEventStoreInput.class);
             createEventStoreInput.setIsSycnNeeded(false);
             createEventStoreUseCase.execute(createEventStoreInput);
+
+            productProjectionSimpleSearch.execute(createEventStoreInput.getAggregateId());
             
           } catch (Exception e) {
             System.out.println("Problema ao ler mensagem"+e);
