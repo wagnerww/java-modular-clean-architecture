@@ -5,15 +5,12 @@
     <artifactId>clean-arch.quarkus</artifactId>
     <groupId>com.wagnerww.cleanarch.quarkus</groupId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../../pom.xml</relativePath>
   </parent>
 
-  <groupId>ccom.wagnerww.cleanarch.quarkus</groupId>
   <artifactId>cqrs</artifactId>
-  <version>1.0-SNAPSHOT</version>
 
   <name>cqrs</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

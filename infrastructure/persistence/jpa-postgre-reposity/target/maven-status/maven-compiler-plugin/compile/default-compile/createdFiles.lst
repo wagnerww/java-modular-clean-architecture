@@ -1,9 +1,12 @@
 com/wagnerww/cleanarch/repository/jpa/postgre/eventstore/EventStoreJpaEntity.class
 com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductJpaEnity.class
 com/wagnerww/cleanarch/repository/jpa/postgre/eventstore/EventStoreJpaMapper.class
+com/wagnerww/cleanarch/repository/jpa/postgre/aggregates/product/ProductAggregateJpaEntity.class
 META-INF/panache-archive.marker
 com/wagnerww/cleanarch/repository/jpa/postgre/eventstore/EventStoreRepositoryImpl.class
+com/wagnerww/cleanarch/repository/jpa/postgre/aggregates/product/ProductAggregateModelRepository.class
 com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductModelRepository.class
 com/wagnerww/cleanarch/repository/jpa/postgre/eventstore/EventStoreModelRepository.class
+com/wagnerww/cleanarch/repository/jpa/postgre/aggregates/product/ProductAggregateRepositoryImpl.class
 com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductRepositoryImpl.class
 com/wagnerww/cleanarch/repository/jpa/postgre/product/ProductJpaMapper.class

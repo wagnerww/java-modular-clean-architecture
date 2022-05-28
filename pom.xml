@@ -45,8 +45,7 @@
 
     <module>infrastructure/cqrs</module>
           
-    
-    <module>cqrs</module>
+  
       
   </modules>
       

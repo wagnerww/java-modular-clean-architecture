@@ -1,6 +1,6 @@
-/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/EventStoreRepository.java
-/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/events/EventStoreProducerEventRepository.java
-/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/events/EventStoreInputEvent.java
-/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/product/ProductRepository.java
-/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/product/Product.java
-/Users/wagner.wagner/Documents/dev/quarkus/quarkus-multimodules/clean-arch.quarkus/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/EventStore.java
+/Users/wagner.wagner/Documents/dev/quarkus/java-modular-clean-architecture/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/EventStore.java
+/Users/wagner.wagner/Documents/dev/quarkus/java-modular-clean-architecture/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/EventStoreRepository.java
+/Users/wagner.wagner/Documents/dev/quarkus/java-modular-clean-architecture/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/product/Product.java
+/Users/wagner.wagner/Documents/dev/quarkus/java-modular-clean-architecture/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/events/EventStoreInputEvent.java
+/Users/wagner.wagner/Documents/dev/quarkus/java-modular-clean-architecture/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/product/ProductRepository.java
+/Users/wagner.wagner/Documents/dev/quarkus/java-modular-clean-architecture/domain/src/main/java/com/wagnerww/cleanarch/quarkus/domain/eventstore/events/EventStoreProducerEventRepository.java
